@@ -355,11 +355,19 @@ class Auctions extends Component {
                         })}
                     </div>
                )}
-               {(this.state.auctions_s.length == 0 || this.state.auctions.length == 0) && (
+               {(this.state.auctions_s.length == 0 && this.state.auctions.length == 0) && (
                    
                    <div className="center">
                         <Loader type="Puff" color="#00BFFF" height={100} width={100}/>
-                        <h4 style={{marginTop:'20px'}}>Fetching Data</h4>
+                        <h4 style={{marginTop:'20px'}}>Fetching Data For Foundation</h4>
+                    </div>
+               )}
+
+                {(this.state.auctions_s.length == 0 && this.state.auctions.length > 0) && (
+                   
+                   <div className="center">
+                        <Loader type="Puff" color="#00BFFF" height={100} width={100}/>
+                        <h4 style={{marginTop:'20px'}}>Fetching Data For Superrare</h4>
                     </div>
                )}
                
