@@ -23,8 +23,6 @@ class Auctions extends Component {
         timer: 0
     }
 
-    
-
     convertTimeToSeconds = (auctions) => {
         var seconds = []
         for(let i = 0 ; i < auctions.length ; i++){
@@ -352,7 +350,6 @@ class Auctions extends Component {
 
 
     render(){
-        // console.log("render = " , this.state.auctions)
         return(
             <div className="container m-t-50">
                {/* <h1> Auctions </h1> */}
